@@ -14,6 +14,7 @@
       <p>Name:{{name}}</p>
       <p>Email:{{email}}</p>
     </div>
+    <div style="height:30px"></div>
     <div class="text-center">
       <v-btn
           v-if="!chip1 && !chip2 && !chip3 && !chip4"
@@ -68,7 +69,55 @@
         Complete
       </v-chip>
     </div>
+    <v-spacer></v-spacer>
+    <hr>
+    <div class="text-center">
+      <v-chip
+          class="ma-2"
+          color="success"
+          outlined
+      >
+        <v-icon left>
+          mdi-server-plus
+        </v-icon>
+        Server Status
+      </v-chip>
 
+      <v-chip
+          class="ma-2"
+          color="primary"
+          outlined
+          pill
+      >
+        User Account
+        <v-icon right>
+          mdi-account-outline
+        </v-icon>
+      </v-chip>
+
+      <v-chip
+          class="ma-2"
+          color="deep-purple accent-4"
+          outlined
+      >
+        <v-icon left>
+          mdi-wrench
+        </v-icon>
+        Update Settings
+      </v-chip>
+
+      <v-chip
+          class="ma-2"
+          close
+          color="indigo darken-3"
+          outlined
+      >
+        <v-icon left>
+          mdi-fire
+        </v-icon>
+        New Posts Available
+      </v-chip>
+    </div>
   </div>
 
 </template>
